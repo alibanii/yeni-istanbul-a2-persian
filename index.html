@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0a8891">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Yeni İstanbul A2">
+  <title>Yeni İstanbul A2 | واژگان و دستور به فارسی</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-view="home">
+  <header id="hud" class="hud">
+    <div class="hud-inner">
+      <button id="openSettings" class="icon-btn" type="button" aria-label="تنظیمات" title="تنظیمات">⚙</button>
+      <button id="hudStreak" class="hud-stat" type="button" aria-label="روزهای پیوسته">
+        <span aria-hidden="true">🔥</span><strong id="streakCount">0</strong>
+      </button>
+      <button id="hudGoal" class="hud-stat goal" type="button" aria-label="هدف روزانه">
+        <span aria-hidden="true">⚡</span><strong id="goalText">0/30</strong>
+      </button>
+      <div class="hud-stat" aria-label="واژه‌های آموخته‌شده">
+        <span aria-hidden="true">◆</span><strong id="learnedCount">0/20</strong>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="screen home-screen">
+    <nav id="lessonTabs" class="lesson-tabs" aria-label="واحدها"></nav>
+
+    <section class="lesson-hero" aria-labelledby="heroTitle">
+      <img id="heroImage" src="assets/unit-1-gezelim-gorelim.jpg" alt="تصویر کاغذبری از زبان‌آموزان در استانبول کنار آشپزخانه و رستوران">
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p id="heroEyebrow" class="eyebrow">Yeni İstanbul A2 · Ünite 01</p>
+        <h1 id="heroTitle" lang="tr" dir="ltr">Gezelim Görelim</h1>
+        <p id="heroSubtitle">آشپزی، سفارش غذا و معرفی ویژگی‌های آدم‌ها</p>
+      </div>
+      <div id="heroProgress" class="hero-progress">۰ از ۵ بخش</div>
+    </section>
+
+    <section class="path-head">
+      <div>
+        <p id="pathEyebrow" class="eyebrow">مسیر واحد ۱</p>
+        <h2 id="pathTitle">واژه‌ها را یاد بگیر، به‌کار ببر و تازه نگه دار</h2>
+      </div>
+      <button id="openCriteria" class="text-btn" type="button">معیار انتخاب واژه‌ها</button>
+    </section>
+    <div id="learningPath" class="learning-path" role="list"></div>
+  </main>
+
+  <section id="session" class="screen session" hidden>
+    <div class="session-top">
+      <button id="quitSession" class="icon-btn quit" type="button" aria-label="خروج">×</button>
+      <div class="progress-wrap">
+        <div class="progress-track" role="progressbar" aria-label="پیشرفت تمرین"><span id="progressFill"></span></div>
+        <div id="progressText" class="progress-text">۰ / ۲۲</div>
+      </div>
+      <div id="mistakeBadge" class="mistake-badge" title="اشتباه‌ها">0</div>
+    </div>
+    <div class="session-body">
+      <div id="stage" class="stage" aria-live="polite"></div>
+    </div>
+    <div id="feedback" class="feedback" hidden aria-live="assertive"></div>
+    <footer class="session-foot">
+      <button id="primaryBtn" class="primary-btn" type="button">بررسی</button>
+    </footer>
+  </section>
+
+  <main id="bank" class="screen bank-screen" hidden>
+    <section class="bank-head">
+      <p id="bankEyebrow" class="eyebrow">Ünite 01</p>
+      <h1 id="bankTitle">واژه‌های واحد ۱</h1>
+      <p id="bankMeta" class="muted"></p>
+      <label class="search-wrap">
+        <span aria-hidden="true">⌕</span>
+        <input id="searchInput" type="search" placeholder="جست‌وجوی ترکی یا فارسی" aria-label="جست‌وجوی واژه">
+      </label>
+      <div id="bankFilters" class="filter-row"></div>
+    </section>
+    <div id="wordList" class="word-list"></div>
+  </main>
+
+  <nav id="bottomNav" class="bottom-nav" aria-label="پیمایش اصلی">
+    <button class="nav-btn active" data-nav="home" type="button"><span aria-hidden="true">⌂</span>یادگیری</button>
+    <button class="nav-btn" data-nav="practice" type="button"><span aria-hidden="true">↻</span>مرور</button>
+    <button class="nav-btn" data-nav="bank" type="button"><span aria-hidden="true">▤</span>واژه‌ها</button>
+    <button class="nav-btn" data-nav="settings" type="button"><span aria-hidden="true">⚙</span>تنظیمات</button>
+  </nav>
+
+  <div id="settingsModal" class="modal" hidden>
+    <div class="modal-scrim" data-close-modal></div>
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+      <header class="modal-head">
+        <h2 id="settingsTitle">تنظیمات</h2>
+        <button class="icon-btn" type="button" data-close-modal aria-label="بستن">×</button>
+      </header>
+      <div id="profileStats" class="stat-grid"></div>
+      <div class="setting-group">
+        <h3>هدف روزانه</h3>
+        <div id="goalOptions" class="pill-row"></div>
+      </div>
+      <div class="setting-group">
+        <h3>صدا</h3>
+        <label class="switch-row"><span>پخش خودکار واژه‌های تازه</span><input id="autoSpeak" type="checkbox" checked></label>
+        <label class="field-row"><span>سرعت تلفظ</span><select id="speechRate"><option value="0.72">آهسته</option><option value="0.86" selected>معمولی</option><option value="1">سریع</option></select></label>
+      </div>
+      <button id="resetProgress" class="danger-btn" type="button">پاک کردن پیشرفت</button>
+      <p id="appCredit" class="app-credit">Yeni İstanbul A2 · برنامهٔ مستقل واحد ۱</p>
+    </section>
+  </div>
+
+  <div id="criteriaModal" class="modal" hidden>
+    <div class="modal-scrim" data-close-criteria></div>
+    <section class="modal-panel criteria-panel" role="dialog" aria-modal="true" aria-labelledby="criteriaTitle">
+      <header class="modal-head">
+        <h2 id="criteriaTitle">معیار انتخاب ۲۰ واژهٔ واحد ۱</h2>
+        <button class="icon-btn" type="button" data-close-criteria aria-label="بستن">×</button>
+      </header>
+      <ol class="criteria-list">
+        <li><strong>تمرکز کتاب:</strong> واژه در تصویر، متن، منو، تمرین یا فهرست واژگان واحد برجسته باشد.</li>
+        <li><strong>تکرار:</strong> در خواندن، شنیدن، گفت‌وگو یا مرور پایانی دوباره دیده شود.</li>
+        <li><strong>کاربرد در A2:</strong> برای آشپزی، رستوران، مسیر و معرفی آدم‌ها مفید باشد.</li>
+        <li><strong>ارزش زبانی:</strong> همراه با حرف تعریف، صرف یا ترکیب رایج قابل یادگیری باشد.</li>
+      </ol>
+      <p id="criteriaNote" class="criteria-note">منبع انتخاب: همهٔ صفحات واحد ۱ در دو ویرایش ارسالی کتاب İstanbul A2.</p>
+    </section>
+  </div>
+
+  <canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js").catch(() => {}));
+    }
+  </script>
+</body>
+</html>
