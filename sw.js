@@ -1,5 +1,5 @@
-const CACHE = "yeni-istanbul-a2-unit-1-v3";
-const ASSETS = ["./", "./index.html", "./styles.css", "./data.js", "./app.js", "./icon.svg", "./manifest.webmanifest", "./assets/unit-1-gezelim-gorelim.jpg"];
+const CACHE = "yeni-istanbul-a2-units-1-2-v4";
+const ASSETS = ["./", "./index.html", "./styles.css", "./data.js", "./app.js", "./icon.svg", "./manifest.webmanifest", "./assets/unit-1-gezelim-gorelim.jpg", "./assets/unit-1-gezelim-gorelim.png", "./assets/unit-2-haberiniz-olsun.jpg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(ASSETS)).then(() => self.skipWaiting()));

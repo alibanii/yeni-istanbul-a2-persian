@@ -274,6 +274,281 @@
     q("کدام گزینه با پسوند -lık/-lik ساخته شده است؟", ["güzellik", "tuzlu", "sabırsız"], "güzellik", "güzel + lik یک اسم انتزاعی به معنی زیبایی می‌سازد.", "fa")
   ];
 
+  const unit2Vocab = [
+    {
+      id: "u2-dogmak", group: "hayat", term: "doğmak", fa: "به دنیا آمدن؛ متولد شدن", type: "verb",
+      form: "fiil · doğar · doğdu · nerede doğdun?", source: "Yeni İstanbul A2 · Ünite 2A, s. 28 · Küçük Hayatlar, Büyük Başarılar",
+      example: "Ahmet 1974 yılında İstanbul'da doğdu.", exampleFa: "احمد در سال ۱۹۷۴ در استانبول به دنیا آمد.",
+      cloze: "Siz nerede ve ne zaman ____?", clozeFa: "شما کجا و چه زمانی به دنیا آمدید؟", answer: "doğdunuz", distractors: ["okudunuz", "atandınız", "başvurdunuz"],
+      typeAnswers: ["doğdu", "doğdun", "doğdunuz"]
+    },
+    {
+      id: "u2-mezun-olmak", group: "hayat", term: "mezun olmak", fa: "فارغ‌التحصیل شدن", type: "phrase",
+      form: "kalıp fiil · mezun olur · mezun oldu", source: "Yeni İstanbul A2 · Ünite 2A, s. 28-30 · hayat hikâyeleri",
+      example: "Seda 2013'te üniversiteden mezun oldu.", exampleFa: "صدا در سال ۲۰۱۳ از دانشگاه فارغ‌التحصیل شد.",
+      cloze: "Kardeşim geçen yıl liseden ____.", clozeFa: "خواهر/برادرم سال گذشته از دبیرستان فارغ‌التحصیل شد.", answer: "mezun oldu", distractors: ["ünlü oldu", "emekli oldu", "gönüllü oldu"],
+      typeAnswers: ["mezun oldu", "mezunum"]
+    },
+    {
+      id: "u2-atanmak", group: "hayat", term: "atanmak", fa: "منصوب شدن؛ به محل خدمت گماشته شدن", type: "verb",
+      form: "fiil · atanır · atandı · nereye atandı?", source: "Yeni İstanbul A2 · Ünite 2A, s. 28 · Köy Okullarına Yardım",
+      example: "Seda 2014 yılında Ağrı'da bir köye atandı.", exampleFa: "صدا در سال ۲۰۱۴ به روستایی در آغری منصوب شد.",
+      cloze: "Yeni öğretmen küçük bir köye ____.", clozeFa: "معلم جدید به روستایی کوچک منصوب شد.", answer: "atandı", distractors: ["başvurdu", "yerleşti", "mezun oldu"],
+      typeAnswers: ["atandı", "atan"]
+    },
+    {
+      id: "u2-basvurmak", group: "hayat", term: "başvurmak", fa: "درخواست دادن؛ تقاضا کردن", type: "verb",
+      form: "fiil · başvurur · başvurdu · -e başvurmak", source: "Yeni İstanbul A2 · Ünite 2A, s. 28 · Yeryüzü Doktorları",
+      example: "Bir vakfa gönüllü olmak için başvuru yaptım.", exampleFa: "برای داوطلب شدن در یک بنیاد درخواست دادم.",
+      cloze: "Bu işe internetten ____.", clozeFa: "برای این شغل از اینترنت درخواست دادم.", answer: "başvurdum", distractors: ["atandım", "keşfettim", "seyrettim"],
+      typeAnswers: ["başvur", "başvurdu", "başvurdum"]
+    },
+    {
+      id: "u2-gonullu-olmak", group: "hayat", term: "gönüllü olmak", fa: "داوطلب شدن؛ داوطلب بودن", type: "phrase",
+      form: "kalıp fiil · gönüllü olur · gönüllü oldu", source: "Yeni İstanbul A2 · Ünite 2A, s. 28 · Yeryüzü Doktorları",
+      example: "İnsanlara yardım etmek için vakıfta gönüllü oldum.", exampleFa: "برای کمک به مردم در بنیاد داوطلب شدم.",
+      cloze: "Köy okuluna yardım projesinde ____.", clozeFa: "در پروژهٔ کمک به مدرسهٔ روستا داوطلب شدم.", answer: "gönüllü oldum", distractors: ["mezun oldum", "ünlü oldum", "emekli oldum"],
+      typeAnswers: ["gönüllü", "gönüllü oldum"]
+    },
+    {
+      id: "u2-basari", group: "basari", term: "başarı", fa: "موفقیت؛ دستاورد", type: "noun",
+      form: "isim · başarılar · büyük başarı", source: "Yeni İstanbul A2 · Ünite 2A, s. 28 · Küçük Hayatlar, Büyük Başarılar",
+      example: "Her insanın başarı hikâyesi farklıdır.", exampleFa: "داستان موفقیت هر انسان متفاوت است.",
+      cloze: "Sizin hayatınızdaki en büyük ____ nedir?", clozeFa: "بزرگ‌ترین موفقیت زندگی شما چیست؟", answer: "başarı", distractors: ["başrol", "ödül", "haber"],
+      typeAnswers: ["başarılar", "başarım"]
+    },
+    {
+      id: "u2-unlu-olmak", group: "basari", term: "ünlü olmak", fa: "مشهور شدن؛ معروف بودن", type: "phrase",
+      form: "kalıp fiil · ünlü olur · ünlü oldu", source: "Yeni İstanbul A2 · Ünite 2A, s. 30 · önemli kişiler",
+      example: "Orhan Pamuk romanlarıyla ünlü oldu.", exampleFa: "اورهان پاموک با رمان‌هایش مشهور شد.",
+      cloze: "Bu bilim insanı çalışmalarıyla ____.", clozeFa: "این دانشمند با پژوهش‌هایش مشهور شد.", answer: "ünlü oldu", distractors: ["mezun oldu", "gönüllü oldu", "hasta oldu"],
+      typeAnswers: ["ünlü", "ünlü oldu"]
+    },
+    {
+      id: "u2-mucit", group: "basari", term: "mucit", fa: "مخترع", type: "noun",
+      form: "isim · mucitler · ünlü mucit", source: "Yeni İstanbul A2 · Ünite 2, s. 42-44 · kültür ve kelime listesi",
+      example: "Hezarfen Ahmet Çelebi ünlü bir mucitti.", exampleFa: "هزارفن احمد چلبی مخترعی مشهور بود.",
+      cloze: "Yeni bir araç yapan kişiye ____ denir.", clozeFa: "به کسی که وسیله‌ای تازه می‌سازد مخترع می‌گویند.", answer: "mucit", distractors: ["romancı", "gazeteci", "başrol"],
+      typeAnswers: ["mucitler"]
+    },
+    {
+      id: "u2-kesfetmek", group: "basari", term: "keşfetmek", fa: "کشف کردن", type: "verb",
+      form: "fiil · keşfeder · keşfetti", source: "Yeni İstanbul A2 · Ünite 2, s. 42-44 · buluşlar ve kelime listesi",
+      example: "Bilim insanları yeni bir yöntem keşfettiler.", exampleFa: "دانشمندان روشی تازه کشف کردند.",
+      cloze: "Araştırmacılar önemli bir bilgi ____.", clozeFa: "پژوهشگران اطلاعات مهمی کشف کردند.", answer: "keşfettiler", distractors: ["seyrettiler", "tükettiler", "başvurdular"],
+      typeAnswers: ["keşfet", "keşfetti", "keşfettiler"]
+    },
+    {
+      id: "u2-odul", group: "basari", term: "ödül", fa: "جایزه", type: "noun",
+      form: "isim · ödüller · ödül almak", source: "Yeni İstanbul A2 · Ünite 2A, s. 30 · Orhan Pamuk",
+      example: "Orhan Pamuk 2006 yılında Nobel Edebiyat Ödülü'nü aldı.", exampleFa: "اورهان پاموک در سال ۲۰۰۶ جایزهٔ نوبل ادبیات را گرفت.",
+      cloze: "Başarılı yazar birçok ____ aldı.", clozeFa: "نویسندهٔ موفق جایزه‌های زیادی گرفت.", answer: "ödül", distractors: ["sinyal", "haber", "başrol"],
+      typeAnswers: ["ödüller", "ödül almak"]
+    },
+    {
+      id: "u2-basrol", group: "sinema", term: "başrol", fa: "نقش اصلی؛ بازیگر نقش اصلی", type: "noun",
+      form: "isim · başrolde · başrol oyuncusu", source: "Yeni İstanbul A2 · Ünite 2B, s. 31 · Sinemada Hangi Film Vardı?",
+      example: "Filmin başrolünde iki genç oyuncu vardı.", exampleFa: "در نقش‌های اصلی فیلم دو بازیگر جوان حضور داشتند.",
+      cloze: "Bu filmin ____ kim oynuyor?", clozeFa: "چه کسی در نقش اصلی این فیلم بازی می‌کند؟", answer: "başrolünde", distractors: ["türünde", "manşetinde", "ödülünde"],
+      typeAnswers: ["başrolde", "başrolünde"]
+    },
+    {
+      id: "u2-film-turu", group: "sinema", term: "film türü", fa: "ژانر یا گونهٔ فیلم", type: "phrase",
+      form: "isim tamlaması · film türleri", source: "Yeni İstanbul A2 · Ünite 2B, s. 31 · film afişleri",
+      example: "En çok hangi tür filmleri seviyorsunuz?", exampleFa: "بیشتر از همه چه نوع فیلم‌هایی را دوست دارید؟",
+      cloze: "Komedi ve belgesel iki farklı ____.", clozeFa: "کمدی و مستند دو ژانر متفاوت فیلم‌اند.", answer: "film türüdür", distractors: ["haber türüdür", "başroldür", "ödüldür"],
+      typeAnswers: ["film türleri", "tür"]
+    },
+    {
+      id: "u2-gerilim", group: "sinema", term: "gerilim", fa: "دلهره؛ ژانر مهیج", type: "noun",
+      form: "isim · gerilim filmi", source: "Yeni İstanbul A2 · Ünite 2B, s. 31 · film türleri",
+      example: "Dün akşam bir gerilim filmi seyrettik.", exampleFa: "دیشب یک فیلم دلهره‌آور تماشا کردیم.",
+      cloze: "Korku ve ____ filmlerini sevmiyorum.", clozeFa: "فیلم‌های ترسناک و دلهره‌آور را دوست ندارم.", answer: "gerilim", distractors: ["belgesel", "animasyon", "komedi"],
+      typeAnswers: ["gerilim filmi"]
+    },
+    {
+      id: "u2-belgesel", group: "sinema", term: "belgesel", fa: "مستند؛ فیلم مستند", type: "noun",
+      form: "isim · belgeseller · belgesel film", source: "Yeni İstanbul A2 · Ünite 2B, s. 31 · film türleri",
+      example: "Doğa hakkında güzel bir belgesel izledim.", exampleFa: "یک مستند زیبا دربارهٔ طبیعت دیدم.",
+      cloze: "Gerçek olayları anlatan bu film bir ____.", clozeFa: "این فیلم که رویدادهای واقعی را روایت می‌کند یک مستند است.", answer: "belgesel", distractors: ["gerilim", "animasyon", "romantik"],
+      typeAnswers: ["belgeseller", "belgesel film"]
+    },
+    {
+      id: "u2-seyretmek", group: "sinema", term: "seyretmek", fa: "تماشا کردن", type: "verb",
+      form: "fiil · seyreder · seyretti", source: "Yeni İstanbul A2 · Ünite 2A-2B, s. 29-34 · hafta sonu etkinlikleri",
+      example: "Geçen hafta sonu sinemada film seyrettim.", exampleFa: "آخر هفتهٔ گذشته در سینما فیلم تماشا کردم.",
+      cloze: "Dün akşam televizyonda haberleri ____.", clozeFa: "دیشب اخبار را در تلویزیون تماشا کردم.", answer: "seyrettim", distractors: ["keşfettim", "başvurdum", "tükettim"],
+      typeAnswers: ["seyret", "seyretti", "seyrettim"]
+    },
+    {
+      id: "u2-haber", group: "haber", term: "haber", fa: "خبر؛ گزارش خبری", type: "noun",
+      form: "isim · haberler · haber vermek", source: "Yeni İstanbul A2 · Ünite 2C, s. 36-39 · Haberler",
+      example: "Bu sabah sağlık haberlerini okudum.", exampleFa: "امروز صبح خبرهای سلامت را خواندم.",
+      cloze: "Gazetede ilginç bir ____ okudum.", clozeFa: "در روزنامه خبر جالبی خواندم.", answer: "haber", distractors: ["başarı", "ödül", "gerilim"],
+      typeAnswers: ["haberler", "haberi"]
+    },
+    {
+      id: "u2-manset", group: "haber", term: "manşet", fa: "تیتر اصلی؛ سرخط خبر", type: "noun",
+      form: "isim · manşetler · manşete çıkmak", source: "Yeni İstanbul A2 · Ünite 2C, s. 39 · sağlık manşetleri",
+      example: "Gazetenin manşeti sağlıkla ilgiliydi.", exampleFa: "تیتر اصلی روزنامه دربارهٔ سلامت بود.",
+      cloze: "Bu haber bugün bütün gazetelerde ____ oldu.", clozeFa: "این خبر امروز تیتر اصلی همهٔ روزنامه‌ها شد.", answer: "manşet", distractors: ["başrol", "belgesel", "turnuva"],
+      typeAnswers: ["manşetler", "manşeti"]
+    },
+    {
+      id: "u2-tuketmek", group: "haber", term: "tüketmek", fa: "مصرف کردن؛ خوردن یا به‌کار بردن", type: "verb",
+      form: "fiil · tüketir · tüketti · tüketin", source: "Yeni İstanbul A2 · Ünite 2C, s. 36 · Sağlıklı Bir Hayat İçin On Altın Kural",
+      example: "Her gün bir avuç çiğ kuru yemiş tüketin.", exampleFa: "هر روز یک مشت آجیل خام مصرف کنید.",
+      cloze: "Aşırı yağlı yiyecekleri az ____.", clozeFa: "غذاهای بسیار چرب را کمتر مصرف کنید.", answer: "tüketin", distractors: ["keşfedin", "seyredin", "başvurun"],
+      typeAnswers: ["tüket", "tüketti", "tüketin"]
+    },
+    {
+      id: "u2-beslenmek", group: "haber", term: "beslenmek", fa: "تغذیه کردن؛ غذا خوردن", type: "verb",
+      form: "fiil · beslenir · beslendi · düzenli beslenmek", source: "Yeni İstanbul A2 · Ünite 2C, s. 36 · sağlıklı hayat",
+      example: "Sağlıklı ve düzenli beslenmek çok önemlidir.", exampleFa: "تغذیهٔ سالم و منظم بسیار مهم است.",
+      cloze: "Uzun yaşamak için düzenli ____.", clozeFa: "برای عمر طولانی منظم غذا بخورید.", answer: "beslenin", distractors: ["seyredin", "başvurun", "keşfedin"],
+      typeAnswers: ["beslen", "beslenin", "beslendi"]
+    },
+    {
+      id: "u2-kuru-yemis", group: "haber", term: "kuru yemiş", fa: "آجیل؛ خشکبار", type: "phrase",
+      form: "isim · bir avuç kuru yemiş", source: "Yeni İstanbul A2 · Ünite 2C, s. 36 · sağlıklı beslenme",
+      example: "Çiğ badem ve fındık sağlıklı kuru yemişlerdir.", exampleFa: "بادام و فندق خام از آجیل‌های سالم‌اند.",
+      cloze: "Ara öğünde bir avuç ____ yedim.", clozeFa: "در میان‌وعده یک مشت آجیل خوردم.", answer: "kuru yemiş", distractors: ["beyaz et", "meyve suyu", "kamp ateşi"],
+      typeAnswers: ["kuru yemişler", "kuruyemiş"]
+    },
+    {
+      id: "u2-ciglik", group: "workbook_penicillin", term: "çığlık", fa: "فریاد؛ جیغ", type: "noun",
+      form: "isim · çığlık atmak / çığlık duymak", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2A, s. 11 · Penisilin",
+      example: "Çiftçi tarlada çalışırken bir çığlık duydu.", exampleFa: "کشاورز هنگام کار در مزرعه فریادی شنید.",
+      cloze: "Bataklıktan bir çocuğun ____ duyuldu.", clozeFa: "فریاد کودکی از مرداب شنیده شد.", answer: "çığlığı", distractors: ["ödülü", "manşeti", "başrolü"],
+      typeAnswers: ["çığlığı", "çığlık atmak"]
+    },
+    {
+      id: "u2-bataklik", group: "workbook_penicillin", term: "bataklık", fa: "مرداب؛ باتلاق", type: "noun",
+      form: "isim · bataklıkta / bataklıktan", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2A, s. 11 · Penisilin",
+      example: "Çiftçi çocuğu bataklıktan çıkardı.", exampleFa: "کشاورز کودک را از باتلاق بیرون آورد.",
+      cloze: "Çocuk ____ yardım istedi.", clozeFa: "کودک در باتلاق کمک خواست.", answer: "bataklıkta", distractors: ["turnuvada", "manşette", "başrolde"],
+      typeAnswers: ["bataklıkta", "bataklıktan"]
+    },
+    {
+      id: "u2-kurtarmak", group: "workbook_penicillin", term: "kurtarmak", fa: "نجات دادن", type: "verb",
+      form: "fiil · kurtarır · kurtardı · kimi kurtardı?", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2A, s. 11 · Penisilin",
+      example: "Fleming çocuğu ölümden kurtardı.", exampleFa: "فلمینگ کودک را از مرگ نجات داد.",
+      cloze: "Doktor hastayı zatürreden ____.", clozeFa: "پزشک بیمار را از ذات‌الریه نجات داد.", answer: "kurtardı", distractors: ["keşfetti", "seyretti", "atandı"],
+      typeAnswers: ["kurtar", "kurtardı", "kurtarın"]
+    },
+    {
+      id: "u2-egitim-gormek", group: "workbook_penicillin", term: "eğitim görmek", fa: "آموزش دیدن؛ تحصیل کردن", type: "phrase",
+      form: "kalıp fiil · eğitim görür · eğitim gördü", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2A, s. 11 · Penisilin",
+      example: "Fleming'in oğlu iyi bir eğitim gördü.", exampleFa: "پسر فلمینگ آموزش خوبی دید.",
+      cloze: "Genç bilim insanı Londra'da ____.", clozeFa: "دانشمند جوان در لندن تحصیل کرد.", answer: "eğitim gördü", distractors: ["film seyretti", "haber okudu", "kamp yaptı"],
+      typeAnswers: ["eğitim gördü", "eğitim aldım"]
+    },
+    {
+      id: "u2-projeye-katilmak", group: "workbook_penicillin", term: "projeye katılmak", fa: "به پروژه پیوستن؛ در پروژه شرکت کردن", type: "phrase",
+      form: "kalıp fiil · projeye katılır · katıldı", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2A, s. 12 · Yeni Bir Proje",
+      example: "Dört öğrenci sokak hayvanları projesine katıldı.", exampleFa: "چهار دانش‌آموز به پروژهٔ حیوانات خیابانی پیوستند.",
+      cloze: "Jinhao bu projeye neden ____?", clozeFa: "جین‌هائو چرا به این پروژه پیوست؟", answer: "katıldı", distractors: ["atandı", "mezun oldu", "seyretti"],
+      typeAnswers: ["projeye katıl", "katıldı", "katılmak"]
+    },
+    {
+      id: "u2-cadir-kurmak", group: "workbook_camp", term: "çadır kurmak", fa: "چادر برپا کردن", type: "phrase",
+      form: "kalıp fiil · çadır kurar · çadır kurdu", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2B, s. 13 · Bolu'da Kamp",
+      example: "Kerem babasına çadır kurmak için yardım etti.", exampleFa: "کرم برای برپا کردن چادر به پدرش کمک کرد.",
+      cloze: "Gölün yanında büyük bir ____.", clozeFa: "کنار دریاچه یک چادر بزرگ برپا کردیم.", answer: "çadır kurduk", distractors: ["haber okuduk", "film seyrettik", "ödül aldık"],
+      typeAnswers: ["çadır kur", "çadır kurduk", "çadır kurdu"]
+    },
+    {
+      id: "u2-cali-toplamak", group: "workbook_camp", term: "çalı toplamak", fa: "بوته و هیزم جمع کردن", type: "phrase",
+      form: "kalıp fiil · çalı toplar · çalı topladı", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2B, s. 13 · Bolu'da Kamp",
+      example: "Çocuklar ateş için çalı topladılar.", exampleFa: "بچه‌ها برای آتش بوته و هیزم جمع کردند.",
+      cloze: "Kamp ateşini yakmadan önce ____.", clozeFa: "پیش از روشن کردن آتش اردو هیزم جمع کردیم.", answer: "çalı topladık", distractors: ["kuru yemiş yedik", "haber yazdık", "film seyrettik"],
+      typeAnswers: ["çalı topla", "çalı topladı", "çalı topladık"]
+    },
+    {
+      id: "u2-kamp-atesi", group: "workbook_camp", term: "kamp ateşi", fa: "آتش اردو", type: "phrase",
+      form: "isim tamlaması · kamp ateşini yakmak", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2B, s. 13 · Bolu'da Kamp",
+      example: "Geceleyin kamp ateşiyle ısındık.", exampleFa: "شب با آتش اردو گرم شدیم.",
+      cloze: "Hava soğuktu ama ____ yanında oturduk.", clozeFa: "هوا سرد بود اما کنار آتش اردو نشستیم.", answer: "kamp ateşinin", distractors: ["film türünün", "gazete manşetinin", "başrolün"],
+      typeAnswers: ["kamp ateşini", "kamp ateşinin"]
+    },
+    {
+      id: "u2-turnuva", group: "workbook_camp", term: "turnuva", fa: "مسابقات؛ تورنمنت", type: "noun",
+      form: "isim · turnuvalar · turnuvayı kazanmak", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2C, s. 15 · Bu Yıl da Böyle Geçti",
+      example: "Naomi Osaka tenis turnuvasında şampiyon oldu.", exampleFa: "نائومی اوساکا در مسابقات تنیس قهرمان شد.",
+      cloze: "Türkiye Bisiklet ____ bir spor haberiydi.", clozeFa: "تور دوچرخه‌سواری ترکیه یک خبر ورزشی بود.", answer: "Turnuvası", distractors: ["Manşeti", "Belgeseli", "Başrolü"],
+      typeAnswers: ["turnuvası", "turnuvalar"]
+    },
+    {
+      id: "u2-sampiyon-olmak", group: "workbook_camp", term: "şampiyon olmak", fa: "قهرمان شدن", type: "phrase",
+      form: "kalıp fiil · şampiyon olur · şampiyon oldu", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 2C, s. 15 · spor haberleri",
+      example: "Liverpool finali kazandı ve şampiyon oldu.", exampleFa: "لیورپول فینال را برد و قهرمان شد.",
+      cloze: "Takım final maçından sonra ____.", clozeFa: "تیم پس از مسابقهٔ فینال قهرمان شد.", answer: "şampiyon oldu", distractors: ["gönüllü oldu", "mezun oldu", "ünlü oldu"],
+      typeAnswers: ["şampiyon", "şampiyon oldu"]
+    }
+  ];
+
+  const unit2Groups = [
+    { id: "hayat", icon: "1", title: "Hayatın dönüm noktaları", fa: "رویدادهای مهم زندگی", subtitle: "از تولد و فارغ‌التحصیلی تا کار و فعالیت داوطلبانه" },
+    { id: "basari", icon: "2", title: "Başarı ve önemli kişiler", fa: "موفقیت و چهره‌های مهم", subtitle: "دستاورد، شهرت، اختراع، کشف و جایزه" },
+    { id: "sinema", icon: "3", title: "Sinema ve hafta sonu", fa: "سینما و آخر هفته", subtitle: "ژانرها، نقش اصلی و گفتن آنچه تماشا کردی" },
+    { id: "haber", icon: "4", title: "Haberler ve sağlıklı hayat", fa: "خبرها و زندگی سالم", subtitle: "تیتر خبر و توصیه‌های تغذیه‌ای کتاب" },
+    { id: "workbook_penicillin", icon: "5", title: "Penisilin ve yeni proje", fa: "پنی‌سیلین و پروژهٔ تازه", subtitle: "تمرین‌های دفتر کار: نجات، آموزش و کار داوطلبانه" },
+    { id: "workbook_camp", icon: "6", title: "Bolu'da kamp ve spor", fa: "اردوی بولو و خبرهای ورزشی", subtitle: "تمرین‌های دفتر کار: چادر، آتش اردو و قهرمانی" }
+  ];
+
+  const unit2GrammarTeach = [
+    {
+      title: "Belirli geçmiş zaman: -DI",
+      body: "برای رویدادی که در گذشته تمام شده از -dı/-di/-du/-dü یا پس از صامت بی‌صدا از -tı/-ti/-tu/-tü استفاده می‌کنیم. سپس شناسهٔ شخص می‌آید: geldim، geldin، geldi، geldik، geldiniz، geldiler. در فارسی معمولاً با گذشتهٔ ساده ترجمه می‌شود.",
+      example: "Dün sinemaya gittim; Seda 2013'te mezun oldu.", emphasis: ["gittim", "mezun", "oldu"]
+    },
+    {
+      title: "منفی و پرسشیِ گذشته",
+      body: "منفی با -ma/-me پیش از -DI ساخته می‌شود: gelmedim. برای پرسش، mı/mi/mu/mü جدا نوشته می‌شود و شناسه به آن می‌چسبد: geldin mi؟ در پرسش منفی می‌گوییم gelmedin mi؟",
+      example: "Dün ders çalışmadım. Filmi seyrettin mi?", emphasis: ["çalışmadım", "seyrettin", "mi"]
+    },
+    {
+      title: "İsim cümlelerinde geçmiş: -(y)DI",
+      body: "برای «بودن» در گذشته، -ydı/-ydi/-ydu/-ydü را به اسم یا صفت می‌افزاییم: hastaydım. پس از صامت شکل i- حذف می‌شود: öğrenciydi. منفی با değil بود: mutlu değildik. پرسش با mıydı ساخته می‌شود: evde miydin؟",
+      example: "Geçen hafta hastaydım ama evde değildim.", emphasis: ["hastaydım", "değildim"]
+    },
+    {
+      title: "Sebep ve sonuç bağlaçları",
+      body: "çünkü جملهٔ دلیل را معرفی می‌کند: Gitmedim çünkü hastaydım. اما bu sebeple، bu nedenle، bu yüzden و bunun için معمولاً پیش از نتیجه می‌آیند: Hastaydım, bu yüzden gitmedim. جای دلیل و نتیجه را دقیق نگه دار.",
+      example: "Hava soğuktu; bu nedenle dışarı çıkmadık.", emphasis: ["bu", "nedenle"]
+    },
+    {
+      title: "ile و شکل‌های -la/-le",
+      body: "ile همراهی، ابزار یا پیوند میان دو اسم را نشان می‌دهد: annem ile، uçak ile، Ayşe ile Mehmet. در گفتار و نوشتار به شکل پسوند -la/-le می‌آید؛ پس از واکه y میانجی می‌گیرد: arabayla، annemle، diş fırçasıyla.",
+      example: "Annemle geldim; dişlerimi diş fırçasıyla fırçaladım.", emphasis: ["Annemle", "fırçasıyla"]
+    }
+  ];
+
+  const unit2GrammarQuestions = [
+    q("Ben dün sinemaya ____.", ["gittim", "gittin", "gitti"], "gittim", "فاعل ben است؛ git + ti + m → gittim."),
+    q("Seda 2013'te üniversiteden mezun ____.", ["oldu", "oldum", "oldunuz"], "oldu", "فاعل سوم‌شخص مفرد است؛ olmak در گذشته oldu می‌شود."),
+    q("Biz geçen yıl İstanbul'a ____.", ["geldik", "geldiniz", "geldiler"], "geldik", "شناسهٔ biz در گذشته -k است: gel-di-k."),
+    q("Onlar geçen hafta projeye ____.", ["katılmadılar", "katılmadınız", "katılmadık"], "katılmadılar", "منفیِ onlar: katıl + ma + dı + lar."),
+    q("Sen bu filmi daha önce ____ mi?", ["seyrettin", "seyretti", "seyrettiniz"], "seyrettin", "در پرسش، فعل گذشته صرف می‌شود و mi جدا می‌آید."),
+    q("O dün okula ____ mi?", ["gelmedi", "gelmedin", "gelmedik"], "gelmedi", "پرسش منفی برای o: gelmedi mi؟"),
+    q("Geçen hafta çok ____; bu yüzden dinlendim.", ["yorgundum", "yorgundun", "yorgundu"], "yorgundum", "برای ben، صفت + ydı + m: yorgundum."),
+    q("Dün hava soğuk ____.", ["değildi", "değildim", "değildiniz"], "değildi", "منفیِ جملهٔ اسمی با değil + گذشته: değildi."),
+    q("Siz geçen yıl öğrenci ____?", ["miydiniz", "miydin", "miydik"], "miydiniz", "پرسش گذشته برای siz: öğrenci miydiniz؟"),
+    q("Çocuklar kampta çok ____.", ["mutluydular", "mutluydum", "mutluydunuz"], "mutluydular", "فاعل جمع است؛ mutlu + ydu + lar."),
+    q("Okula gitmedim ____ hastaydım.", ["çünkü", "bu yüzden", "bunun için"], "çünkü", "پس از çünkü علت می‌آید: نرفتم چون بیمار بودم."),
+    q("Hava çok soğuktu; ____ dışarı çıkmadık.", ["bu nedenle", "çünkü", "ama"], "bu nedenle", "پس از bu nedenle نتیجه می‌آید: بیرون نرفتیم."),
+    q("Sınavdan az puan aldım; ____ annem bana kızdı.", ["bu yüzden", "çünkü", "ile"], "bu yüzden", "نمرهٔ کم علت و عصبانیت مادر نتیجه است."),
+    q("Yarın erken kalkacağım; ____ şimdi uyuyorum.", ["bunun için", "çünkü", "ama"], "bunun için", "bunun için نتیجه یا اقدام ناشی از جملهٔ قبل را معرفی می‌کند."),
+    q("Sinemaya annem____ gittim.", ["le", "la", "yle"], "le", "annem + le → annemle؛ همراهی را بیان می‌کند."),
+    q("İstanbul'a uçak____ geldik.", ["la", "le", "yla"], "la", "uçak با صامت تمام می‌شود و واکهٔ آخر ı است: uçakla."),
+    q("Dişlerimi diş fırçası____ fırçalıyorum.", ["yla", "la", "le"], "yla", "پس از واکهٔ ı، y میانجی می‌آید: fırçasıyla."),
+    q("Lütfen haberleri dikkatle ____.", ["okuyun", "okuyalım", "okusun"], "okuyun", "مرور واحد ۱: امر محترمانه یا جمع برای siz با -yın/-yin/-yun/-yün."),
+    q("Haydi bu akşam bir belgesel ____.", ["seyredelim", "seyredeyim", "seyredin"], "seyredelim", "مرور واحد ۱: پیشنهاد مشترک برای biz با -alım/-elim."),
+    q("Bu gece çok geç ____.", ["kalmayın", "kalmayalım", "kalmasın"], "kalmayın", "مرور واحد ۱: امر منفی برای siz، kal + ma + yın."),
+    q("Ben çayı ____ içiyorum. (şeker yok)", ["şekersiz", "şekerli", "şekerlik"], "şekersiz", "مرور واحد ۱: -siz معنی نبودن یا نداشتن می‌دهد."),
+    q("Bu salon yüz ____.", ["kişilik", "kişili", "kişisiz"], "kişilik", "مرور واحد ۱: عدد + kişi + -lik ظرفیت را می‌سازد.")
+  ];
+
   const units = [
     {
       id: 1,
@@ -295,6 +570,28 @@
         placeholder: "پاسخ را به ترکی بنویس",
         teach: unit1GrammarTeach,
         questions: unit1GrammarQuestions
+      }
+    },
+    {
+      id: 2,
+      code: "Ünite 02",
+      title: "Haberiniz Olsun",
+      subtitle: "روایت گذشته، آخر هفته و سینما، خبرها و زندگی سالم",
+      pathTitle: "رویدادهای گذشته را دقیق تعریف کن و خبر و تجربه را به ترکی بازگو کن",
+      image: "assets/unit-2-haberiniz-olsun.jpg",
+      imageAlt: "تصویر کاغذبری از سه زبان‌آموز در استانبول کنار روزنامه، دوربین سینما و وسایل سفر",
+      criteriaNote: "منبع انتخاب: تمام بخش‌های واحد ۲ در Yeni İstanbul A2 (صفحات چاپی ۲۷ تا ۴۴) و تمرین‌های کامل واحد ۲ در Yeni İstanbul A2 Çalışma Kitabı (صفحات ۱۱ تا ۱۶). چهار بخش نخست واژگان پرتکرار زندگی‌نامه، موفقیت، سینما و خبر/سلامت را پوشش می‌دهند؛ دو بخش پایانی مستقیماً از متن‌های «Penisilin»، «Yeni Bir Proje»، «Bolu'da Kamp» و خبرهای ورزشی دفتر کار ساخته شده‌اند. هر بخش دقیقاً ۲۲ تمرین دارد و پنج تمرین پایانی واژه‌های قبلی را مرور می‌کند.",
+      vocab: unit2Vocab,
+      groups: unit2Groups,
+      grammar: {
+        id: "grammar",
+        icon: "G",
+        title: "Geçmiş zaman, bağlaçlar ve ile",
+        fa: "دستور زبان پایانی",
+        subtitle: "گذشتهٔ معین، جمله‌های اسمی در گذشته، علت و نتیجه، و ile",
+        placeholder: "پاسخ را به ترکی بنویس",
+        teach: unit2GrammarTeach,
+        questions: unit2GrammarQuestions
       }
     }
   ];

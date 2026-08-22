@@ -1,7 +1,7 @@
 {
-  "name": "Yeni İstanbul A2 - Ünite 1",
+  "name": "Yeni İstanbul A2 - Farsça Öğrenme",
   "short_name": "İstanbul A2",
-  "description": "آموزش فارسی واژگان و دستور زبان واحد ۱ Yeni İstanbul A2",
+  "description": "آموزش فارسی واژگان و دستور زبان کتاب Yeni İstanbul A2",
   "lang": "fa",
   "dir": "rtl",
   "start_url": "./index.html",
