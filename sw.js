@@ -1,4 +1,4 @@
-const CACHE = "yeni-istanbul-a2-unit-1-v2";
+const CACHE = "yeni-istanbul-a2-unit-1-v3";
 const ASSETS = ["./", "./index.html", "./styles.css", "./data.js", "./app.js", "./icon.svg", "./manifest.webmanifest", "./assets/unit-1-gezelim-gorelim.jpg"];
 
 self.addEventListener("install", (event) => {

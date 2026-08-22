@@ -144,6 +144,76 @@
       form: "sıfat · sağlık + -lı · karşıtı: sağlıksız", source: "Yeni İstanbul A2 · 1A tavsiyeler ve 1C yapım ekleri",
       example: "Sağlıklı beslenin ve düzenli hareket edin.", exampleFa: "سالم غذا بخورید و منظم تحرک داشته باشید.",
       cloze: "Sebze yemek ____ bir alışkanlıktır.", clozeFa: "سبزی خوردن عادتی سالم است.", answer: "sağlıklı", distractors: ["lezzetsiz", "dikkatsiz", "şekersiz"]
+    },
+    {
+      id: "u1-eritmek", group: "workbook_food", term: "eritmek", fa: "آب کردن؛ ذوب کردن", type: "verb",
+      form: "fiil · eritir · eritti · eritin", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1A, s. 4 · Menemen Yapalım",
+      example: "Tavada bir kaşık tereyağı eritin.", exampleFa: "یک قاشق کره را در ماهیتابه آب کنید.",
+      cloze: "Önce tereyağını tavada ____.", clozeFa: "ابتدا کره را در ماهیتابه آب کنید.", answer: "eritin", distractors: ["serpin", "doğrayın", "çırpın"],
+      typeAnswers: ["erit"]
+    },
+    {
+      id: "u1-serpmek", group: "workbook_food", term: "serpmek", fa: "پاشیدن؛ روی چیزی ریختن", type: "verb",
+      form: "fiil · serper · serpti · serpin", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1A, s. 4 · Menemen Yapalım",
+      example: "Menemenin üzerine tuz ve karabiber serpin.", exampleFa: "روی منمن نمک و فلفل سیاه بپاشید.",
+      cloze: "Salatanın üzerine biraz kekik ____.", clozeFa: "کمی آویشن روی سالاد بپاشید.", answer: "serpin", distractors: ["eritin", "süzün", "yıkayın"],
+      typeAnswers: ["serp"]
+    },
+    {
+      id: "u1-servis-elemani", group: "workbook_food", term: "servis elemanı", fa: "کارمند خدمات؛ مسئول تحویل سفارش", type: "phrase",
+      form: "isim tamlaması · servis elemanları", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1B, s. 6 · Telefonda Sipariş",
+      example: "Servis elemanı siparişi yarım saatte getirecek.", exampleFa: "مسئول تحویل، سفارش را در نیم ساعت می‌آورد.",
+      cloze: "Müşteri telefonda ____ ile konuşuyor.", clozeFa: "مشتری تلفنی با مسئول خدمات صحبت می‌کند.", answer: "servis elemanı", distractors: ["müşteri", "aşçı", "kasiyer"],
+      typeAnswers: ["servis elemanı"]
+    },
+    {
+      id: "u1-mercimek-corbasi", group: "workbook_food", term: "mercimek çorbası", fa: "سوپ عدس", type: "phrase",
+      form: "isim tamlaması · bir kâse mercimek çorbası", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1B, s. 6 · Telefonda Sipariş",
+      example: "İki kâse mercimek çorbası istiyorum.", exampleFa: "دو کاسه سوپ عدس می‌خواهم.",
+      cloze: "Başlangıç olarak bir kâse ____ alayım.", clozeFa: "برای پیش‌غذا یک کاسه سوپ عدس می‌گیرم.", answer: "mercimek çorbası", distractors: ["vişne suyu", "tavuk dürüm", "mevsim salatası"],
+      typeAnswers: ["mercimek çorbası"]
+    },
+    {
+      id: "u1-visne-suyu", group: "workbook_food", term: "vişne suyu", fa: "آب آلبالو", type: "phrase",
+      form: "isim tamlaması · bir bardak vişne suyu", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1B, s. 6 · Telefonda Sipariş",
+      example: "Arkadaşıma da vişne suyu getirir misiniz?", exampleFa: "برای دوستم هم آب آلبالو می‌آورید؟",
+      cloze: "Ayran yoksa bir bardak ____ alayım.", clozeFa: "اگر دوغ نیست، یک لیوان آب آلبالو می‌گیرم.", answer: "vişne suyu", distractors: ["mercimek çorbası", "tavuk dürüm", "et döner"],
+      typeAnswers: ["vişne suyu"]
+    },
+    {
+      id: "u1-cocukluk-arkadasi", group: "workbook_people", term: "çocukluk arkadaşı", fa: "دوست دوران کودکی", type: "phrase",
+      form: "isim tamlaması · çocukluk arkadaşım", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1C, s. 9 · Heyecanlı Bekleyiş",
+      example: "Cumartesi çocukluk arkadaşımla buluşuyorum.", exampleFa: "شنبه با دوست دوران کودکی‌ام دیدار می‌کنم.",
+      cloze: "Ezgi on beş yıldır görmediği ____ bekliyor.", clozeFa: "ازگی منتظر دوست دوران کودکی‌اش است که پانزده سال ندیده.", answer: "çocukluk arkadaşını", distractors: ["servis elemanını", "sınıf öğretmenini", "iş arkadaşını"],
+      typeAnswers: ["çocukluk arkadaşı", "çocukluk arkadaşını"]
+    },
+    {
+      id: "u1-heyecanli", group: "workbook_people", term: "heyecanlı", fa: "هیجان‌زده؛ پرشور", type: "adjective",
+      form: "sıfat · heyecan + -lı · karşıtı: heyecansız", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1C, s. 9 · Heyecanlı Bekleyiş",
+      example: "Eski arkadaşını göreceği için çok heyecanlı.", exampleFa: "چون قرار است دوست قدیمی‌اش را ببیند، خیلی هیجان‌زده است.",
+      cloze: "Yarınki buluşma için çok ____ görünüyor.", clozeFa: "برای دیدار فردا خیلی هیجان‌زده به نظر می‌رسد.", answer: "heyecanlı", distractors: ["gözlüksüz", "dürüst", "sakalsız"],
+      typeAnswers: ["heyecanlı"]
+    },
+    {
+      id: "u1-ortak-yon", group: "workbook_people", term: "ortak yön", fa: "ویژگی مشترک؛ وجه اشتراک", type: "phrase",
+      form: "isim tamlaması · ortak yönümüz / ortak yönleri", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1C, s. 9 · Heyecanlı Bekleyiş",
+      example: "İkimizin birçok ortak yönü var.", exampleFa: "ما دو نفر وجوه مشترک زیادی داریم.",
+      cloze: "Aynı müzikleri seviyoruz; bu bizim bir ____.", clozeFa: "ما موسیقی‌های یکسانی دوست داریم؛ این یک ویژگی مشترک ماست.", answer: "ortak yönümüz", distractors: ["çocukluk arkadaşımız", "uzun saçımız", "servis elemanımız"],
+      typeAnswers: ["ortak yön", "ortak yönümüz"]
+    },
+    {
+      id: "u1-gozluksuz", group: "workbook_people", term: "gözlüksüz", fa: "بدون عینک", type: "adjective",
+      form: "sıfat · gözlük + -süz · karşıtı: gözlüklü", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1C, s. 9-10 · görünüş çalışmaları",
+      example: "Uzun siyah saçlı, kahverengi gözlü ve gözlüksüz bir kadın.", exampleFa: "زنی با موهای بلند سیاه، چشم‌های قهوه‌ای و بدون عینک.",
+      cloze: "Bugün lens taktığı için ____ geldi.", clozeFa: "امروز چون لنز گذاشته، بدون عینک آمد.", answer: "gözlüksüz", distractors: ["gözlüklü", "şapkalı", "kapüşonlu"],
+      typeAnswers: ["gözlüksüz"]
+    },
+    {
+      id: "u1-durustluk", group: "workbook_people", term: "dürüstlük", fa: "صداقت؛ درستکاری", type: "noun",
+      form: "isim · dürüst + -lük", source: "Yeni İstanbul A2 Çalışma Kitabı · Ünite 1C, s. 9 · Heyecanlı Bekleyiş",
+      example: "İkimiz için de dürüstlük çok önemli.", exampleFa: "برای هر دوی ما صداقت بسیار مهم است.",
+      cloze: "İyi bir arkadaşlıkta ____ önemlidir.", clozeFa: "در یک دوستی خوب، صداقت مهم است.", answer: "dürüstlük", distractors: ["tembellik", "gözlük", "çocukluk"],
+      typeAnswers: ["dürüstlük"]
     }
   ];
 
@@ -151,7 +221,9 @@
     { id: "hazirlik", icon: "1", title: "Mutfak hazırlığı", fa: "آماده‌سازی در آشپزخانه", subtitle: "از خرد کردن و هم زدن تا آب‌پز و سرخ کردن" },
     { id: "tarif", icon: "2", title: "Tarif adımları", fa: "مراحل دستور غذا", subtitle: "مواد را اضافه، مخلوط، پخته و تزیین کن" },
     { id: "lokanta", icon: "3", title: "Lokantada", fa: "در رستوران", subtitle: "غذا سفارش بده و دربارهٔ منو پیشنهاد بخواه" },
-    { id: "profil", icon: "4", title: "Profil ve özellikler", fa: "پروفایل و ویژگی‌ها", subtitle: "آدم‌ها را با صفت‌های کاربردی توصیف کن" }
+    { id: "profil", icon: "4", title: "Profil ve özellikler", fa: "پروفایل و ویژگی‌ها", subtitle: "آدم‌ها را با صفت‌های کاربردی توصیف کن" },
+    { id: "workbook_food", icon: "5", title: "Menemen ve telefonda sipariş", fa: "تمرین غذا و سفارش تلفنی", subtitle: "تمرین‌های کتاب کار: دستور منمن و سفارش غذا با تلفن" },
+    { id: "workbook_people", icon: "6", title: "Görünüş ve arkadaşlık", fa: "تمرین ظاهر و دوستی", subtitle: "تمرین‌های کتاب کار: توصیف ظاهر و پیدا کردن ویژگی‌های مشترک" }
   ];
 
   const unit1GrammarTeach = [
@@ -211,7 +283,7 @@
       pathTitle: "واژه‌ها را در موقعیت واقعی یاد بگیر و با دستورهای واحد به‌کار ببر",
       image: "assets/unit-1-gezelim-gorelim.png",
       imageAlt: "تصویر کاغذبری از زبان‌آموزان در استانبول کنار آشپزخانه، رستوران و غذاهای ترکی",
-      criteriaNote: "منبع انتخاب: تمام بخش‌های واحد ۱ در Yeni İstanbul A2 (صفحات چاپی ۶ تا ۲۶) و ویرایش جست‌وجوشدنی İstanbul A2 (صفحات چاپی ۷ تا ۲۲): آماده‌سازی، متن شیش‌کباب، راهنمای مسیر، منو و سفارش، پروفایل‌های اینترنتی، مرور واحد و فهرست واژگان.",
+      criteriaNote: "منبع انتخاب: تمام بخش‌های واحد ۱ در Yeni İstanbul A2 (صفحات چاپی ۶ تا ۲۶)، و دو تمرین تکمیلی از Yeni İstanbul A2 Çalışma Kitabı (صفحات ۴ تا ۱۰): دستور منمن، سفارش تلفنی غذا، توصیف ظاهر و متن دوستی. هر بخش تکمیلی دقیقاً ۲۲ تمرین دارد و پنج تمرین پایانی آن واژه‌های پیشین را مرور می‌کند.",
       vocab: unit1Vocab,
       groups: unit1Groups,
       grammar: {

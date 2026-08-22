@@ -6,8 +6,9 @@ Standalone, offline-capable web app for Persian-speaking learners of Turkish.
 
 - Source unit: `Gezelim Görelim`
 - Topic: kitchen actions, recipes and directions, restaurant ordering, online profiles and personal qualities
-- Vocabulary: 20 selected items in four groups of five
-- Vocabulary practice: 22 base exercises per group; groups 2-4 include five earlier-item reviews
+- Vocabulary: 30 selected items in six groups of five
+- Vocabulary practice: 22 base exercises per group; groups 2-6 include five earlier-item reviews
+- Workbook expansion: two additional Unit 1 sections based on workbook pages 4-10 (menemen and telephone ordering; appearance and friendship)
 - Grammar: imperative (`emir kipi`), optative/request form (`istek kipi`), and `-lı / -sız / -lık`
 - Grammar practice: exactly 22 exercises
 

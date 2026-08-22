@@ -227,7 +227,7 @@
     els.heroSubtitle.textContent = lesson.subtitle;
     els.pathEyebrow.textContent = `مسیر واحد ${faNum(currentLessonId)}`;
     els.pathTitle.textContent = lesson.pathTitle;
-    els.criteriaTitle.textContent = `معیار انتخاب ۲۰ واژهٔ واحد ${faNum(currentLessonId)}`;
+    els.criteriaTitle.textContent = `معیار انتخاب ${faNum(vocab.length)} واژهٔ واحد ${faNum(currentLessonId)}`;
     els.criteriaNote.textContent = lesson.criteriaNote;
     els.appCredit.textContent = `Yeni İstanbul A2 · برنامهٔ مستقل واحد ${faNum(currentLessonId)}`;
     const nodes = [...groups, { ...lesson.grammar, grammar: true }];
